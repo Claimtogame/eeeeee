@@ -2,7 +2,7 @@ import os
 
 class Config:
     # Discord Bot Configuration
-    DISCORD_TOKEN = os.getenv('DISCORD_TOKEN', 'MTM0MDE0NzIzMjM4ODk0NDAzNA.GJ0jXX.zlzqpf6qDwNK__oP_vWtKUsehv21PiQZXD_Mow')
+    DISCORD_TOKEN = os.getenv('DISCORD_TOKEN', 'MTM0MDE0NzIzMjM4ODk0NDAzNA.GQqfDb.ERrSJ3DrzVrLO2E2Zsqz0JMGMTmowNHbmoMmC0')
     
     # Roblox OAuth Configuration
     ROBLOX_CLIENT_ID = os.getenv('3410989275174303696', '')
