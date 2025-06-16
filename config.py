@@ -2,11 +2,11 @@ import os
 
 class Config:
     # Discord Bot Configuration
-    DISCORD_TOKEN = os.getenv('DISCORD_TOKEN', '')
+    DISCORD_TOKEN = os.getenv('DISCORD_TOKEN', 'MTM0MDE0NzIzMjM4ODk0NDAzNA.GJ0jXX.zlzqpf6qDwNK__oP_vWtKUsehv21PiQZXD_Mow')
     
     # Roblox OAuth Configuration
-    ROBLOX_CLIENT_ID = os.getenv('ROBLOX_CLIENT_ID', '')
-    ROBLOX_CLIENT_SECRET = os.getenv('ROBLOX_CLIENT_SECRET', '')
+    ROBLOX_CLIENT_ID = os.getenv('3410989275174303696', '')
+    ROBLOX_CLIENT_SECRET = os.getenv('ROBLOX_CLIENT_SECRET', 'RBX-tlpMd6cwAk-T6IlP3wS2qfbdjKXOGAn1UDhU8ISJQtDWDrGtLQJNhhbeqIAjf77i')
     ROBLOX_REDIRECT_URI = os.getenv('ROBLOX_REDIRECT_URI', 'https://workspace.claimsgames.repl.co/callback')
     
     # Role Configuration
