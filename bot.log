@@ -1,0 +1,140 @@
+2025-06-16 19:52:38,713 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-06-16 19:52:38,714 - discord.client - INFO - logging in using static token
+2025-06-16 19:52:38,717 - web.server - INFO - Web server started on 0.0.0.0:5000
+2025-06-16 19:52:38,892 - __main__ - ERROR - Bot error: Improper token has been passed.
+2025-06-16 19:52:59,137 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-06-16 19:52:59,138 - discord.client - INFO - logging in using static token
+2025-06-16 19:52:59,145 - web.server - INFO - Web server started on 0.0.0.0:5000
+2025-06-16 19:52:59,311 - __main__ - ERROR - Bot error: Improper token has been passed.
+2025-06-16 19:56:02,745 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-06-16 19:56:02,745 - discord.client - INFO - logging in using static token
+2025-06-16 19:56:02,751 - web.server - INFO - Web server started on 0.0.0.0:5000
+2025-06-16 19:56:03,363 - bot.database - INFO - Database initialized successfully
+2025-06-16 19:56:03,364 - __main__ - INFO - Bot setup completed
+2025-06-16 19:56:03,534 - aiohttp.access - INFO - 172.31.128.51 [16/Jun/2025:19:56:03 +0000] "GET / HTTP/1.1" 200 2802 "https://8f387343-7053-47a5-9541-0d1eef1c8496-00-se88v0br5al.spock.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar4s%3A" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-16 19:56:03,635 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 4598dc26d5908f40f2d7820800790c3a).
+2025-06-16 19:56:04,127 - aiohttp.access - INFO - 172.31.128.51 [16/Jun/2025:19:56:04 +0000] "GET /static/style.css HTTP/1.1" 200 238 "https://8f387343-7053-47a5-9541-0d1eef1c8496-00-se88v0br5al.spock.replit.dev/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-16 19:56:04,566 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-06-16 19:56:04,567 - discord.client - INFO - logging in using static token
+2025-06-16 19:56:05,015 - bot.database - INFO - Database initialized successfully
+2025-06-16 19:56:05,016 - __main__ - INFO - Bot setup completed
+2025-06-16 19:56:05,324 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 228ba62f4e3b02c998f46cc982d21a68).
+2025-06-16 19:56:05,643 - __main__ - INFO - Claim's Playground#4854 has connected to Discord!
+2025-06-16 19:56:05,643 - __main__ - INFO - Bot is in 1 guilds
+2025-06-16 19:56:05,944 - __main__ - INFO - Synced 4 command(s)
+2025-06-16 19:56:07,330 - __main__ - INFO - Claim's Playground#4854 has connected to Discord!
+2025-06-16 19:56:07,330 - __main__ - INFO - Bot is in 1 guilds
+2025-06-16 19:56:17,300 - aiohttp.access - INFO - 127.0.0.1 [16/Jun/2025:19:56:17 +0000] "GET / HTTP/1.1" 200 2802 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/118.0.5993.88 Safari/537.36"
+2025-06-16 19:56:17,314 - aiohttp.access - INFO - 127.0.0.1 [16/Jun/2025:19:56:17 +0000] "GET /static/style.css HTTP/1.1" 200 238 "http://127.0.0.1:5000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/118.0.5993.88 Safari/537.36"
+2025-06-16 19:56:49,465 - bot.commands - ERROR - Error in verify command: 404 Not Found (error code: 10062): Unknown interaction
+2025-06-16 19:56:49,584 - discord.app_commands.tree - ERROR - Ignoring exception in command 'verify'
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot/commands.py", line 72, in verify_command
+    await interaction.response.send_message(embed=embed, view=view, ephemeral=True)
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/bot/commands.py", line 80, in verify_command
+    await interaction.response.send_message(embed=embed, ephemeral=True)
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/webhook/async_.py", line 226, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'verify' raised an exception: HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+2025-06-16 19:57:06,166 - __main__ - INFO - Synced 4 command(s)
+2025-06-16 19:58:37,380 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-06-16 19:58:37,381 - discord.client - INFO - logging in using static token
+2025-06-16 19:58:37,400 - web.server - INFO - Web server started on 0.0.0.0:5000
+2025-06-16 19:58:37,719 - aiohttp.access - INFO - 172.31.128.51 [16/Jun/2025:19:58:37 +0000] "GET / HTTP/1.1" 200 2802 "https://8f387343-7053-47a5-9541-0d1eef1c8496-00-se88v0br5al.spock.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar64%3A" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-16 19:58:37,851 - aiohttp.access - INFO - 172.31.128.51 [16/Jun/2025:19:58:37 +0000] "GET /static/style.css HTTP/1.1" 304 180 "https://8f387343-7053-47a5-9541-0d1eef1c8496-00-se88v0br5al.spock.replit.dev/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-16 19:58:38,268 - bot.database - INFO - Database initialized successfully
+2025-06-16 19:58:38,269 - __main__ - INFO - Bot setup completed
+2025-06-16 19:58:38,651 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 51bf423fbf2c643579412970cfd5b873).
+2025-06-16 19:58:40,661 - __main__ - INFO - Claim's Playground#4854 has connected to Discord!
+2025-06-16 19:58:40,661 - __main__ - INFO - Bot is in 1 guilds
+2025-06-16 19:58:40,900 - __main__ - INFO - Synced 4 command(s)
+2025-06-16 20:00:00,527 - bot.commands - ERROR - Error in verify command: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+2025-06-16 20:00:00,669 - discord.app_commands.tree - ERROR - Ignoring exception in command 'verify'
+Traceback (most recent call last):
+  File "/home/runner/workspace/bot/commands.py", line 72, in verify_command
+    # Create view with verification button
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/webhook/async_.py", line 226, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/bot/commands.py", line 80, in verify_command
+    "Verification Error",
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/interactions.py", line 1004, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/webhook/async_.py", line 226, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/app_commands/tree.py", line 1310, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/app_commands/commands.py", line 883, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/app_commands/commands.py", line 876, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'verify' raised an exception: HTTPException: 400 Bad Request (error code: 40060): Interaction has already been acknowledged.
+2025-06-16 20:00:26,389 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-06-16 20:00:26,390 - discord.client - INFO - logging in using static token
+2025-06-16 20:00:26,394 - web.server - INFO - Web server started on 0.0.0.0:5000
+2025-06-16 20:00:26,757 - aiohttp.access - INFO - 172.31.128.51 [16/Jun/2025:20:00:26 +0000] "GET / HTTP/1.1" 200 2802 "https://8f387343-7053-47a5-9541-0d1eef1c8496-00-se88v0br5al.spock.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar70%3A" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-16 20:00:26,906 - aiohttp.access - INFO - 172.31.128.51 [16/Jun/2025:20:00:26 +0000] "GET /static/style.css HTTP/1.1" 304 180 "https://8f387343-7053-47a5-9541-0d1eef1c8496-00-se88v0br5al.spock.replit.dev/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-16 20:00:26,937 - aiohttp.access - INFO - 127.0.0.1 [16/Jun/2025:20:00:26 +0000] "GET / HTTP/1.1" 200 2802 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/118.0.5993.88 Safari/537.36"
+2025-06-16 20:00:26,949 - aiohttp.access - INFO - 127.0.0.1 [16/Jun/2025:20:00:26 +0000] "GET /static/style.css HTTP/1.1" 304 180 "http://127.0.0.1:5000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/118.0.5993.88 Safari/537.36"
+2025-06-16 20:00:27,037 - bot.database - INFO - Database initialized successfully
+2025-06-16 20:00:27,038 - __main__ - INFO - Bot setup completed
+2025-06-16 20:00:27,373 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: a0c6cca026d512527001cef34f22b9c4).
+2025-06-16 20:00:28,264 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-06-16 20:00:28,265 - discord.client - INFO - logging in using static token
+2025-06-16 20:00:28,839 - bot.database - INFO - Database initialized successfully
+2025-06-16 20:00:28,840 - __main__ - INFO - Bot setup completed
+2025-06-16 20:00:29,124 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 3d0f5053b23cf4291646cfb1babdf8f7).
+2025-06-16 20:00:29,380 - __main__ - INFO - Claim's Playground#4854 has connected to Discord!
+2025-06-16 20:00:29,380 - __main__ - INFO - Bot is in 1 guilds
+2025-06-16 20:00:29,623 - __main__ - INFO - Synced 4 command(s)
+2025-06-16 20:00:31,132 - __main__ - INFO - Claim's Playground#4854 has connected to Discord!
+2025-06-16 20:00:31,134 - __main__ - INFO - Bot is in 1 guilds
+2025-06-16 20:01:29,943 - __main__ - INFO - Synced 4 command(s)
+2025-06-16 20:03:29,624 - aiohttp.access - INFO - 172.31.128.51 [16/Jun/2025:20:03:29 +0000] "GET / HTTP/1.1" 200 2802 "https://8f387343-7053-47a5-9541-0d1eef1c8496-00-se88v0br5al.spock.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar3v%3A" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-16 20:03:34,340 - aiohttp.access - INFO - 172.31.128.51 [16/Jun/2025:20:03:34 +0000] "GET / HTTP/1.1" 200 2802 "https://8f387343-7053-47a5-9541-0d1eef1c8496-00-se88v0br5al.spock.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Ar56%3A" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+2025-06-16 20:03:35,034 - aiohttp.access - INFO - 172.31.128.51 [16/Jun/2025:20:03:35 +0000] "GET /static/style.css HTTP/1.1" 304 180 "https://8f387343-7053-47a5-9541-0d1eef1c8496-00-se88v0br5al.spock.replit.dev/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
